@@ -11,6 +11,10 @@
 		2539488629FD37640004D086 /* LeoNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2539487B29FD37640004D086 /* LeoNetworking.framework */; };
 		2539488B29FD37640004D086 /* LeoNetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2539488A29FD37640004D086 /* LeoNetworkingTests.swift */; };
 		2539488C29FD37640004D086 /* LeoNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 2539487E29FD37640004D086 /* LeoNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2539489729FD41590004D086 /* HTTPHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2539489629FD41590004D086 /* HTTPHeader.swift */; };
+		2539489929FD418E0004D086 /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2539489829FD418E0004D086 /* HTTPHeaders.swift */; };
+		2539489B29FD426D0004D086 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2539489A29FD426D0004D086 /* HTTPMethod.swift */; };
+		2539489D29FD436E0004D086 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2539489C29FD436E0004D086 /* ParameterEncoding.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,10 @@
 		2539487F29FD37640004D086 /* LeoNetworking.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = LeoNetworking.docc; sourceTree = "<group>"; };
 		2539488529FD37640004D086 /* LeoNetworkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeoNetworkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2539488A29FD37640004D086 /* LeoNetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeoNetworkingTests.swift; sourceTree = "<group>"; };
+		2539489629FD41590004D086 /* HTTPHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHeader.swift; sourceTree = "<group>"; };
+		2539489829FD418E0004D086 /* HTTPHeaders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHeaders.swift; sourceTree = "<group>"; };
+		2539489A29FD426D0004D086 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		2539489C29FD436E0004D086 /* ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				2539487E29FD37640004D086 /* LeoNetworking.h */,
+				2539489529FD41490004D086 /* HTTP */,
 				2539487F29FD37640004D086 /* LeoNetworking.docc */,
 			);
 			path = LeoNetworking;
@@ -83,6 +92,17 @@
 				2539488A29FD37640004D086 /* LeoNetworkingTests.swift */,
 			);
 			path = LeoNetworkingTests;
+			sourceTree = "<group>";
+		};
+		2539489529FD41490004D086 /* HTTP */ = {
+			isa = PBXGroup;
+			children = (
+				2539489629FD41590004D086 /* HTTPHeader.swift */,
+				2539489829FD418E0004D086 /* HTTPHeaders.swift */,
+				2539489A29FD426D0004D086 /* HTTPMethod.swift */,
+				2539489C29FD436E0004D086 /* ParameterEncoding.swift */,
+			);
+			path = HTTP;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +214,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2539489B29FD426D0004D086 /* HTTPMethod.swift in Sources */,
+				2539489929FD418E0004D086 /* HTTPHeaders.swift in Sources */,
+				2539489D29FD436E0004D086 /* ParameterEncoding.swift in Sources */,
+				2539489729FD41590004D086 /* HTTPHeader.swift in Sources */,
 				2539488029FD37640004D086 /* LeoNetworking.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -398,6 +422,7 @@
 		2539489329FD37640004D086 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -413,6 +438,7 @@
 		2539489429FD37640004D086 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
