@@ -4,3 +4,8 @@ framework module LeoNetworking {
   export *
   module * { export * }
 }
+
+module LeoNetworking.Swift {
+  header "LeoNetworking-Swift.h"
+  requires objc
+}
