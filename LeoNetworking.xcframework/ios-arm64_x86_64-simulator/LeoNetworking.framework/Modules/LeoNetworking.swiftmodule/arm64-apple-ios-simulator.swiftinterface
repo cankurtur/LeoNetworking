@@ -1,0 +1,115 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
+// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name LeoNetworking
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Foundation
+@_exported import LeoNetworking
+import Swift
+import _Concurrency
+import _StringProcessing
+public class EmptyResponse : Swift.Codable {
+  public init()
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+public protocol Endpoint : Swift.CustomStringConvertible {
+  var baseUrl: Swift.String { get }
+  var path: Swift.String { get }
+  var params: [Swift.String : Any]? { get }
+  var headers: LeoNetworking.HTTPHeaders? { get }
+  var baseHeaders: LeoNetworking.HTTPHeaders? { get }
+  var url: Swift.String { get }
+  var method: LeoNetworking.HTTPMethod { get }
+}
+extension LeoNetworking.Endpoint {
+  public var description: Swift.String {
+    get
+  }
+  public var baseHeaders: LeoNetworking.HTTPHeaders? {
+    get
+  }
+}
+extension LeoNetworking.HTTPMethod {
+  public var encoding: LeoNetworking.ParameterEncoding {
+    get
+  }
+}
+public struct HTTPMethod : Swift.RawRepresentable, Swift.Equatable, Swift.Hashable {
+  public static let connect: LeoNetworking.HTTPMethod
+  public static let delete: LeoNetworking.HTTPMethod
+  public static let get: LeoNetworking.HTTPMethod
+  public static let head: LeoNetworking.HTTPMethod
+  public static let options: LeoNetworking.HTTPMethod
+  public static let patch: LeoNetworking.HTTPMethod
+  public static let post: LeoNetworking.HTTPMethod
+  public static let put: LeoNetworking.HTTPMethod
+  public static let query: LeoNetworking.HTTPMethod
+  public static let trace: LeoNetworking.HTTPMethod
+  public let rawValue: Swift.String
+  public init(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+}
+public struct HTTPHeaders {
+  public init()
+  public var asDictionary: [Swift.String : Swift.String] {
+    get
+  }
+  public init(headers: [LeoNetworking.HTTPHeader])
+  public mutating func add(_ header: LeoNetworking.HTTPHeader)
+  public func embed(into request: Foundation.URLRequest) -> Foundation.URLRequest
+}
+public enum ParameterEncoding {
+  case url
+  case json
+  public static func == (a: LeoNetworking.ParameterEncoding, b: LeoNetworking.ParameterEncoding) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct HTTPHeader {
+  public let name: Swift.String
+  public let value: Swift.String
+  public init(name: Swift.String, value: Swift.String)
+}
+public protocol NetworkManagerProtocol {
+  func request<T>(endpoint: some Endpoint, responseType: T.Type, completion: @escaping LeoNetworking.NetworkHandler<T>) where T : Swift.Decodable
+  #if compiler(>=5.3) && $AsyncAwait
+  func request<T>(endpoint: some Endpoint, responseType: T.Type) async throws -> T where T : Swift.Decodable
+  #endif
+}
+final public class NetworkManager : LeoNetworking.NetworkManagerProtocol {
+  public init(session: Foundation.URLSession = .shared, timeoutInterval: Foundation.TimeInterval = 10, clientErrorType: any LeoNetworking.APIError.Type, errorStatusCodesToTrack: [Swift.Int] = [], errorStatusCodeHandler: LeoNetworking.ErrorStatusCodeHandler? = nil)
+  #if compiler(>=5.3) && $AsyncAwait
+  @_Concurrency.MainActor final public func request<T>(endpoint: some Endpoint, responseType: T.Type) async throws -> T where T : Swift.Decodable
+  #endif
+  @_Concurrency.MainActor final public func request<T>(endpoint: some Endpoint, responseType: T.Type, completion: @escaping LeoNetworking.NetworkHandler<T>) where T : Swift.Decodable
+  @objc deinit
+}
+public typealias Closure<T> = ((T) -> Swift.Void)
+public typealias NetworkHandler<T> = (Swift.Result<T, LeoNetworking.APIClientError>) -> Swift.Void where T : Swift.Decodable
+public typealias ErrorStatusCodeHandler = LeoNetworking.Closure<Swift.Int>
+public protocol APIError : AnyObject, Swift.Decodable, Swift.Encodable {
+  var message: Swift.String { get }
+  var statusCode: Swift.Int? { get set }
+}
+public enum APIClientError : Swift.Error {
+  case handledError(error: any LeoNetworking.APIError)
+  case networkError
+  case decoding(error: Swift.DecodingError?)
+  case timeout
+  case invalidStatusCode
+  case badRequest
+  public var message: Swift.String {
+    get
+  }
+  public var debugMessage: Swift.String {
+    get
+  }
+  public var statusCode: Swift.Int {
+    get
+  }
+}
+extension LeoNetworking.ParameterEncoding : Swift.Equatable {}
+extension LeoNetworking.ParameterEncoding : Swift.Hashable {}
