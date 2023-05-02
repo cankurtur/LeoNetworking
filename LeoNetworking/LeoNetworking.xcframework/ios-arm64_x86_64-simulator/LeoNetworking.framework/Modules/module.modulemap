@@ -1,6 +1,0 @@
-framework module LeoNetworking {
-  umbrella header "LeoNetworking.h"
-
-  export *
-  module * { export * }
-}
