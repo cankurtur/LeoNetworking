@@ -15,6 +15,15 @@
 		2539489929FD418E0004D086 /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2539489829FD418E0004D086 /* HTTPHeaders.swift */; };
 		2539489B29FD426D0004D086 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2539489A29FD426D0004D086 /* HTTPMethod.swift */; };
 		2539489D29FD436E0004D086 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2539489C29FD436E0004D086 /* ParameterEncoding.swift */; };
+		253948A329FD5A950004D086 /* NetworkingManagerInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253948A229FD5A950004D086 /* NetworkingManagerInterface.swift */; };
+		253948A529FD5B320004D086 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253948A429FD5B320004D086 /* Endpoint.swift */; };
+		253948A829FD5C320004D086 /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253948A729FD5C320004D086 /* Typealias.swift */; };
+		253948AA29FD5C7B0004D086 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253948A929FD5C7B0004D086 /* Errors.swift */; };
+		253948AC29FD5E840004D086 /* Responses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253948AB29FD5E840004D086 /* Responses.swift */; };
+		253948AE29FD5ECA0004D086 /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253948AD29FD5ECA0004D086 /* RequestBuilder.swift */; };
+		253948B129FD60830004D086 /* URLQueryItemExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253948B029FD60830004D086 /* URLQueryItemExtension.swift */; };
+		253948B329FD612D0004D086 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253948B229FD612D0004D086 /* NetworkingManager.swift */; };
+		253948B529FD62F80004D086 /* URLResponseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253948B429FD62F80004D086 /* URLResponseExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +46,15 @@
 		2539489829FD418E0004D086 /* HTTPHeaders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHeaders.swift; sourceTree = "<group>"; };
 		2539489A29FD426D0004D086 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		2539489C29FD436E0004D086 /* ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		253948A229FD5A950004D086 /* NetworkingManagerInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManagerInterface.swift; sourceTree = "<group>"; };
+		253948A429FD5B320004D086 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		253948A729FD5C320004D086 /* Typealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealias.swift; sourceTree = "<group>"; };
+		253948A929FD5C7B0004D086 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		253948AB29FD5E840004D086 /* Responses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Responses.swift; sourceTree = "<group>"; };
+		253948AD29FD5ECA0004D086 /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
+		253948B029FD60830004D086 /* URLQueryItemExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLQueryItemExtension.swift; sourceTree = "<group>"; };
+		253948B229FD612D0004D086 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
+		253948B429FD62F80004D086 /* URLResponseExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLResponseExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +98,10 @@
 			isa = PBXGroup;
 			children = (
 				2539487E29FD37640004D086 /* LeoNetworking.h */,
+				253948A129FD5A760004D086 /* Base */,
+				253948A629FD5C240004D086 /* Utils */,
 				2539489529FD41490004D086 /* HTTP */,
+				253948AF29FD60690004D086 /* Extension */,
 				2539487F29FD37640004D086 /* LeoNetworking.docc */,
 			);
 			path = LeoNetworking;
@@ -103,6 +124,36 @@
 				2539489C29FD436E0004D086 /* ParameterEncoding.swift */,
 			);
 			path = HTTP;
+			sourceTree = "<group>";
+		};
+		253948A129FD5A760004D086 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				253948A229FD5A950004D086 /* NetworkingManagerInterface.swift */,
+				253948B229FD612D0004D086 /* NetworkingManager.swift */,
+				253948AD29FD5ECA0004D086 /* RequestBuilder.swift */,
+				253948AB29FD5E840004D086 /* Responses.swift */,
+				253948A429FD5B320004D086 /* Endpoint.swift */,
+				253948A929FD5C7B0004D086 /* Errors.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		253948A629FD5C240004D086 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				253948A729FD5C320004D086 /* Typealias.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		253948AF29FD60690004D086 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				253948B029FD60830004D086 /* URLQueryItemExtension.swift */,
+				253948B429FD62F80004D086 /* URLResponseExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,10 +265,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				253948AC29FD5E840004D086 /* Responses.swift in Sources */,
+				253948A529FD5B320004D086 /* Endpoint.swift in Sources */,
 				2539489B29FD426D0004D086 /* HTTPMethod.swift in Sources */,
+				253948B129FD60830004D086 /* URLQueryItemExtension.swift in Sources */,
 				2539489929FD418E0004D086 /* HTTPHeaders.swift in Sources */,
 				2539489D29FD436E0004D086 /* ParameterEncoding.swift in Sources */,
 				2539489729FD41590004D086 /* HTTPHeader.swift in Sources */,
+				253948A329FD5A950004D086 /* NetworkingManagerInterface.swift in Sources */,
+				253948B329FD612D0004D086 /* NetworkingManager.swift in Sources */,
+				253948AE29FD5ECA0004D086 /* RequestBuilder.swift in Sources */,
+				253948B529FD62F80004D086 /* URLResponseExtension.swift in Sources */,
+				253948A829FD5C320004D086 /* Typealias.swift in Sources */,
+				253948AA29FD5C7B0004D086 /* Errors.swift in Sources */,
 				2539488029FD37640004D086 /* LeoNetworking.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

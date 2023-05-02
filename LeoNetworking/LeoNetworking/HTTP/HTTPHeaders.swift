@@ -10,9 +10,9 @@ import Foundation
 /// An order-preserving and case-insensitive representation of HTTP headers.
 public struct HTTPHeaders {
     private var headers: [HTTPHeader] = []
-    
+
     /// Creates an empty instance.
-    public init() { }
+    public init() {}
     
     /// Dictionary representation of the header.
     public var asDictionary: [String: String] {
@@ -23,22 +23,23 @@ public struct HTTPHeaders {
         }
         return dictionary
     }
-    
-    /// Creates an instance from an array of `HTTPHeaders`s
+
+    /// Creates an instance from an array of `HTTPHeader`s.
     public init(headers: [HTTPHeader]) {
         self.init()
+
         self.headers = headers
     }
     
     /// Adds specific header into headers.
-    ///  - Parameter header: Given header.
+    /// - Parameter header: Given header.
     public mutating func add(_ header: HTTPHeader) {
         self.headers.append(header)
     }
     
-    /// Embeds the headers into given url requests.
-    ///  - Parameter request: Given url request.
-    ///  - Returns: Updated url request.
+    /// Embeds the headers into given url request.
+    /// - Parameter request: Given url request.
+    /// - Returns: Updated url request.
     public func embed(into request: URLRequest) -> URLRequest {
         var request = request
         
@@ -49,5 +50,3 @@ public struct HTTPHeaders {
         return request
     }
 }
-
-

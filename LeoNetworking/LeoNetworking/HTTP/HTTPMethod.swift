@@ -8,7 +8,6 @@
 import Foundation
 
 public struct HTTPMethod: RawRepresentable, Equatable, Hashable {
-
     /// `CONNECT` method.
     public static let connect = HTTPMethod(rawValue: "CONNECT")
     
