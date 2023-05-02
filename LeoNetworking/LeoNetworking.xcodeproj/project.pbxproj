@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2517A72C2A01B09100475CBD /* EncodableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2517A72B2A01B09100475CBD /* EncodableExtension.swift */; };
+		2517A72E2A01B0A400475CBD /* DataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2517A72D2A01B0A400475CBD /* DataExtension.swift */; };
+		2517A7302A01B0BA00475CBD /* RequestBuilderGetRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2517A72F2A01B0BA00475CBD /* RequestBuilderGetRequestTests.swift */; };
+		2517A7332A01B0EE00475CBD /* MockEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2517A7322A01B0EE00475CBD /* MockEndpoint.swift */; };
+		2517A7352A01B11100475CBD /* RequestBuilderPostRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2517A7342A01B11100475CBD /* RequestBuilderPostRequestTests.swift */; };
+		2517A7372A01B12F00475CBD /* RequestBuilderDeleteRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2517A7362A01B12F00475CBD /* RequestBuilderDeleteRequestTests.swift */; };
+		2517A7392A01B14A00475CBD /* RequestBuilderHeaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2517A7382A01B14A00475CBD /* RequestBuilderHeaderTests.swift */; };
 		2539488029FD37640004D086 /* LeoNetworking.docc in Sources */ = {isa = PBXBuildFile; fileRef = 2539487F29FD37640004D086 /* LeoNetworking.docc */; };
 		2539488629FD37640004D086 /* LeoNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2539487B29FD37640004D086 /* LeoNetworking.framework */; };
-		2539488B29FD37640004D086 /* LeoNetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2539488A29FD37640004D086 /* LeoNetworkingTests.swift */; };
 		2539488C29FD37640004D086 /* LeoNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 2539487E29FD37640004D086 /* LeoNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2539489729FD41590004D086 /* HTTPHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2539489629FD41590004D086 /* HTTPHeader.swift */; };
 		2539489929FD418E0004D086 /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2539489829FD418E0004D086 /* HTTPHeaders.swift */; };
@@ -37,11 +43,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2517A72B2A01B09100475CBD /* EncodableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodableExtension.swift; sourceTree = "<group>"; };
+		2517A72D2A01B0A400475CBD /* DataExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExtension.swift; sourceTree = "<group>"; };
+		2517A72F2A01B0BA00475CBD /* RequestBuilderGetRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilderGetRequestTests.swift; sourceTree = "<group>"; };
+		2517A7322A01B0EE00475CBD /* MockEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockEndpoint.swift; sourceTree = "<group>"; };
+		2517A7342A01B11100475CBD /* RequestBuilderPostRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilderPostRequestTests.swift; sourceTree = "<group>"; };
+		2517A7362A01B12F00475CBD /* RequestBuilderDeleteRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilderDeleteRequestTests.swift; sourceTree = "<group>"; };
+		2517A7382A01B14A00475CBD /* RequestBuilderHeaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilderHeaderTests.swift; sourceTree = "<group>"; };
 		2539487B29FD37640004D086 /* LeoNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LeoNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2539487E29FD37640004D086 /* LeoNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeoNetworking.h; sourceTree = "<group>"; };
 		2539487F29FD37640004D086 /* LeoNetworking.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = LeoNetworking.docc; sourceTree = "<group>"; };
 		2539488529FD37640004D086 /* LeoNetworkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeoNetworkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2539488A29FD37640004D086 /* LeoNetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeoNetworkingTests.swift; sourceTree = "<group>"; };
 		2539489629FD41590004D086 /* HTTPHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHeader.swift; sourceTree = "<group>"; };
 		2539489829FD418E0004D086 /* HTTPHeaders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHeaders.swift; sourceTree = "<group>"; };
 		2539489A29FD426D0004D086 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
@@ -76,6 +88,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2517A72A2A01B07E00475CBD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2517A72B2A01B09100475CBD /* EncodableExtension.swift */,
+				2517A72D2A01B0A400475CBD /* DataExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2517A7312A01B0DC00475CBD /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				2517A7322A01B0EE00475CBD /* MockEndpoint.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		2539487129FD37640004D086 = {
 			isa = PBXGroup;
 			children = (
@@ -110,7 +139,12 @@
 		2539488929FD37640004D086 /* LeoNetworkingTests */ = {
 			isa = PBXGroup;
 			children = (
-				2539488A29FD37640004D086 /* LeoNetworkingTests.swift */,
+				2517A7312A01B0DC00475CBD /* Mocks */,
+				2517A72A2A01B07E00475CBD /* Extensions */,
+				2517A72F2A01B0BA00475CBD /* RequestBuilderGetRequestTests.swift */,
+				2517A7342A01B11100475CBD /* RequestBuilderPostRequestTests.swift */,
+				2517A7362A01B12F00475CBD /* RequestBuilderDeleteRequestTests.swift */,
+				2517A7382A01B14A00475CBD /* RequestBuilderHeaderTests.swift */,
 			);
 			path = LeoNetworkingTests;
 			sourceTree = "<group>";
@@ -286,7 +320,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2539488B29FD37640004D086 /* LeoNetworkingTests.swift in Sources */,
+				2517A7332A01B0EE00475CBD /* MockEndpoint.swift in Sources */,
+				2517A7302A01B0BA00475CBD /* RequestBuilderGetRequestTests.swift in Sources */,
+				2517A72E2A01B0A400475CBD /* DataExtension.swift in Sources */,
+				2517A7352A01B11100475CBD /* RequestBuilderPostRequestTests.swift in Sources */,
+				2517A7372A01B12F00475CBD /* RequestBuilderDeleteRequestTests.swift in Sources */,
+				2517A72C2A01B09100475CBD /* EncodableExtension.swift in Sources */,
+				2517A7392A01B14A00475CBD /* RequestBuilderHeaderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
