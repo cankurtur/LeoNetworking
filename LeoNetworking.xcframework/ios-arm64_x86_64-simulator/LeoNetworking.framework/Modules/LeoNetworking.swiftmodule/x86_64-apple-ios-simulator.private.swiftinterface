@@ -90,11 +90,15 @@ final public class NetworkManager : LeoNetworking.NetworkManagerProtocol {
 public typealias Closure<T> = ((T) -> Swift.Void)
 public typealias NetworkHandler<T> = (Swift.Result<T, LeoNetworking.APIClientError>) -> Swift.Void where T : Swift.Decodable
 public typealias ErrorStatusCodeHandler = LeoNetworking.Closure<Swift.Int>
-public protocol APIError : Swift.Decodable, Swift.Encodable {
-  var error: any LeoNetworking.BaseError { get }
+public protocol APIError : AnyObject, Swift.Decodable, Swift.Encodable {
+  var error: LeoNetworking.BaseError { get set }
 }
-public protocol BaseError : AnyObject, Swift.Decodable, Swift.Encodable {
-  var message: Swift.String { get set }
+public class BaseError : Swift.Codable {
+  public var code: Swift.String
+  public var message: Swift.String
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 public enum APIClientError : Swift.Error {
   case handledError(apiError: any LeoNetworking.APIError)
