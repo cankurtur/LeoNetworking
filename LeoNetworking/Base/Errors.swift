@@ -8,12 +8,13 @@ import Foundation
 
 /// Generic error type for error layer, provide your own type with confirming this protocol
 /// to be able to cast network error to your own error model.
-public protocol APIError: Codable {
-    var error: BaseError { get }
+public protocol APIError: Codable, AnyObject {
+    var error: BaseError { get set }
 }
 
-public protocol BaseError: Codable, AnyObject {
-    var message: String { get set }
+public class BaseError: Codable {
+    public var code: String
+    public var message: String
 }
 
 /// Concrete API error type.

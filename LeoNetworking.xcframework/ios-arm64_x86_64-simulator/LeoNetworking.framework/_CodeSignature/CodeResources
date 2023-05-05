@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/LeoNetworking.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		cWetVvA+0u4JzvFGKAnrBNusFxE=
+		aQzd0Vfx9IigKZ/MwbUYajU0jUU=
 		</data>
 		<key>Modules/LeoNetworking.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		I/rQefvQFc/k+vlxUfej/CIkkY4=
+		ldouZWVLCiZu9KysR1LF7mg5gWU=
 		</data>
 		<key>Modules/LeoNetworking.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,19 +30,19 @@
 		</data>
 		<key>Modules/LeoNetworking.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		I/rQefvQFc/k+vlxUfej/CIkkY4=
+		ldouZWVLCiZu9KysR1LF7mg5gWU=
 		</data>
 		<key>Modules/LeoNetworking.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		F9gbGURCd0L55KVplysuZwAn/M4=
+		SS9UTYXK6pxceaZGqpZaHJpRqIA=
 		</data>
 		<key>Modules/LeoNetworking.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		cWetVvA+0u4JzvFGKAnrBNusFxE=
+		aQzd0Vfx9IigKZ/MwbUYajU0jUU=
 		</data>
 		<key>Modules/LeoNetworking.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Vxz+KjEEtH4eYoo8kYd37WT+Qnk=
+		64OhAf0n5Zi7n30Gu/OgiUsL7CY=
 		</data>
 		<key>Modules/LeoNetworking.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/LeoNetworking.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Vxz+KjEEtH4eYoo8kYd37WT+Qnk=
+		64OhAf0n5Zi7n30Gu/OgiUsL7CY=
 		</data>
 		<key>Modules/LeoNetworking.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		faaFvFdGtnnH4TWLJDtnRa/aHYI=
+		NIzLB3XVMFIBhNxUWKPz8Uuw+/Y=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -81,14 +81,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5OuNVgLOAlc5K5ZOXeoBWN084KfUSea5PsP1s0wXjVo=
+			M1izLOikopk/JeBsAAfY0LdFV8B+qI4ZCJB7dR2M/jE=
 			</data>
 		</dict>
 		<key>Modules/LeoNetworking.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			//2Zb+pwq0EO4jr/KrUPO6NdjYONSIrM4kNdkPogcPA=
+			ERHxy7Sj8s3ukKjEfT4EWayPXVmilgliBgt+odcw7rY=
 			</data>
 		</dict>
 		<key>Modules/LeoNetworking.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -102,28 +102,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			//2Zb+pwq0EO4jr/KrUPO6NdjYONSIrM4kNdkPogcPA=
+			ERHxy7Sj8s3ukKjEfT4EWayPXVmilgliBgt+odcw7rY=
 			</data>
 		</dict>
 		<key>Modules/LeoNetworking.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bnslV1CCS4QQPRYjfinSlYonLPTWWmEf5Kupahtjt/c=
+			yI3O8K/2UOIsjMcgBkcuiBJYZSIGA8Lq3bvCR2i4zns=
 			</data>
 		</dict>
 		<key>Modules/LeoNetworking.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5OuNVgLOAlc5K5ZOXeoBWN084KfUSea5PsP1s0wXjVo=
+			M1izLOikopk/JeBsAAfY0LdFV8B+qI4ZCJB7dR2M/jE=
 			</data>
 		</dict>
 		<key>Modules/LeoNetworking.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cCdcB8SglUq0bjTkLM7WFXHIYaQ/4b80EWHVH8xsTGc=
+			lDkA4/zVwcBAOT6dYthSGc3Vm+cHASEUzu6mEooV/Yc=
 			</data>
 		</dict>
 		<key>Modules/LeoNetworking.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -137,14 +137,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cCdcB8SglUq0bjTkLM7WFXHIYaQ/4b80EWHVH8xsTGc=
+			lDkA4/zVwcBAOT6dYthSGc3Vm+cHASEUzu6mEooV/Yc=
 			</data>
 		</dict>
 		<key>Modules/LeoNetworking.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Nk9UEywW1AUi5RFZxrlkaeiWqsCBE8LFUOsXHHg81lM=
+			+5r3llBF6d0WOlOwLp2H5Se5PhlRXTb3P3pH62H/D1M=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
