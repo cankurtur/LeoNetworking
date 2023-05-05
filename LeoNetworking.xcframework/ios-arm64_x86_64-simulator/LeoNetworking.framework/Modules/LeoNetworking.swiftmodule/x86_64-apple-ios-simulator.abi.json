@@ -2268,6 +2268,81 @@
         "children": [
           {
             "kind": "Var",
+            "name": "error",
+            "printedName": "error",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BaseError",
+                "printedName": "LeoNetworking.BaseError",
+                "usr": "s:13LeoNetworking9BaseErrorP"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LeoNetworking8APIErrorP5errorAA9BaseError_pvp",
+            "mangledName": "$s13LeoNetworking8APIErrorP5errorAA9BaseError_pvp",
+            "moduleName": "LeoNetworking",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BaseError",
+                    "printedName": "LeoNetworking.BaseError",
+                    "usr": "s:13LeoNetworking9BaseErrorP"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LeoNetworking8APIErrorP5errorAA9BaseError_pvg",
+                "mangledName": "$s13LeoNetworking8APIErrorP5errorAA9BaseError_pvg",
+                "moduleName": "LeoNetworking",
+                "genericSig": "<τ_0_0 where τ_0_0 : LeoNetworking.APIError>",
+                "sugared_genericSig": "<Self where Self : LeoNetworking.APIError>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:13LeoNetworking8APIErrorP",
+        "mangledName": "$s13LeoNetworking8APIErrorP",
+        "moduleName": "LeoNetworking",
+        "genericSig": "<τ_0_0 : Swift.Decodable, τ_0_0 : Swift.Encodable>",
+        "sugared_genericSig": "<Self : Swift.Decodable, Self : Swift.Encodable>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BaseError",
+        "printedName": "BaseError",
+        "children": [
+          {
+            "kind": "Var",
             "name": "message",
             "printedName": "message",
             "children": [
@@ -2279,8 +2354,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:13LeoNetworking8APIErrorP7messageSSvp",
-            "mangledName": "$s13LeoNetworking8APIErrorP7messageSSvp",
+            "usr": "s:13LeoNetworking9BaseErrorP7messageSSvp",
+            "mangledName": "$s13LeoNetworking9BaseErrorP7messageSSvp",
             "moduleName": "LeoNetworking",
             "protocolReq": true,
             "accessors": [
@@ -2297,69 +2372,11 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:13LeoNetworking8APIErrorP7messageSSvg",
-                "mangledName": "$s13LeoNetworking8APIErrorP7messageSSvg",
+                "usr": "s:13LeoNetworking9BaseErrorP7messageSSvg",
+                "mangledName": "$s13LeoNetworking9BaseErrorP7messageSSvg",
                 "moduleName": "LeoNetworking",
-                "genericSig": "<τ_0_0 where τ_0_0 : LeoNetworking.APIError>",
-                "sugared_genericSig": "<Self where Self : LeoNetworking.APIError>",
-                "protocolReq": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "statusCode",
-            "printedName": "statusCode",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Int?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:13LeoNetworking8APIErrorP10statusCodeSiSgvp",
-            "mangledName": "$s13LeoNetworking8APIErrorP10statusCodeSiSgvp",
-            "moduleName": "LeoNetworking",
-            "protocolReq": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.Int?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13LeoNetworking8APIErrorP10statusCodeSiSgvg",
-                "mangledName": "$s13LeoNetworking8APIErrorP10statusCodeSiSgvg",
-                "moduleName": "LeoNetworking",
-                "genericSig": "<τ_0_0 where τ_0_0 : LeoNetworking.APIError>",
-                "sugared_genericSig": "<Self where Self : LeoNetworking.APIError>",
+                "genericSig": "<τ_0_0 where τ_0_0 : LeoNetworking.BaseError>",
+                "sugared_genericSig": "<Self where Self : LeoNetworking.BaseError>",
                 "protocolReq": true,
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "get"
@@ -2376,25 +2393,17 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.Int?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      }
-                    ],
-                    "usr": "s:Sq"
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:13LeoNetworking8APIErrorP10statusCodeSiSgvs",
-                "mangledName": "$s13LeoNetworking8APIErrorP10statusCodeSiSgvs",
+                "usr": "s:13LeoNetworking9BaseErrorP7messageSSvs",
+                "mangledName": "$s13LeoNetworking9BaseErrorP7messageSSvs",
                 "moduleName": "LeoNetworking",
-                "genericSig": "<τ_0_0 where τ_0_0 : LeoNetworking.APIError>",
-                "sugared_genericSig": "<Self where Self : LeoNetworking.APIError>",
+                "genericSig": "<τ_0_0 where τ_0_0 : LeoNetworking.BaseError>",
+                "sugared_genericSig": "<Self where Self : LeoNetworking.BaseError>",
                 "protocolReq": true,
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "set"
@@ -2411,11 +2420,11 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:13LeoNetworking8APIErrorP10statusCodeSiSgvM",
-                "mangledName": "$s13LeoNetworking8APIErrorP10statusCodeSiSgvM",
+                "usr": "s:13LeoNetworking9BaseErrorP7messageSSvM",
+                "mangledName": "$s13LeoNetworking9BaseErrorP7messageSSvM",
                 "moduleName": "LeoNetworking",
-                "genericSig": "<τ_0_0 where τ_0_0 : LeoNetworking.APIError>",
-                "sugared_genericSig": "<Self where Self : LeoNetworking.APIError>",
+                "genericSig": "<τ_0_0 where τ_0_0 : LeoNetworking.BaseError>",
+                "sugared_genericSig": "<Self where Self : LeoNetworking.BaseError>",
                 "protocolReq": true,
                 "implicit": true,
                 "reqNewWitnessTableEntry": true,
@@ -2425,14 +2434,13 @@
           }
         ],
         "declKind": "Protocol",
-        "usr": "s:13LeoNetworking8APIErrorP",
-        "mangledName": "$s13LeoNetworking8APIErrorP",
+        "usr": "s:13LeoNetworking9BaseErrorP",
+        "mangledName": "$s13LeoNetworking9BaseErrorP",
         "moduleName": "LeoNetworking",
         "genericSig": "<τ_0_0 : AnyObject, τ_0_0 : Swift.Decodable, τ_0_0 : Swift.Encodable>",
         "sugared_genericSig": "<Self : AnyObject, Self : Swift.Decodable, Self : Swift.Encodable>",
         "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
+          "AccessControl"
         ],
         "conformances": [
           {
@@ -2480,7 +2488,7 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Tuple",
-                        "printedName": "(error: LeoNetworking.APIError)",
+                        "printedName": "(apiError: LeoNetworking.APIError)",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -3096,112 +3104,112 @@
     {
       "filePath": "\/Users\/cankurtur\/LEO\/LeoNetworking\/LeoNetworking\/Base\/Errors.swift",
       "kind": "StringLiteral",
-      "offset": 783,
+      "offset": 838,
       "length": 16,
       "value": "\"Decoding Error\""
     },
     {
       "filePath": "\/Users\/cankurtur\/LEO\/LeoNetworking\/LeoNetworking\/Base\/Errors.swift",
       "kind": "StringLiteral",
-      "offset": 847,
+      "offset": 902,
       "length": 18,
       "value": "\"Connection Error\""
     },
     {
       "filePath": "\/Users\/cankurtur\/LEO\/LeoNetworking\/LeoNetworking\/Base\/Errors.swift",
       "kind": "StringLiteral",
-      "offset": 908,
+      "offset": 963,
       "length": 9,
       "value": "\"Timeout\""
     },
     {
       "filePath": "\/Users\/cankurtur\/LEO\/LeoNetworking\/LeoNetworking\/Base\/Errors.swift",
       "kind": "StringLiteral",
-      "offset": 970,
+      "offset": 1025,
       "length": 21,
       "value": "\"Invalid status code\""
     },
     {
       "filePath": "\/Users\/cankurtur\/LEO\/LeoNetworking\/LeoNetworking\/Base\/Errors.swift",
       "kind": "StringLiteral",
-      "offset": 1037,
+      "offset": 1092,
       "length": 13,
       "value": "\"Bad request\""
     },
     {
       "filePath": "\/Users\/cankurtur\/LEO\/LeoNetworking\/LeoNetworking\/Base\/Errors.swift",
       "kind": "StringLiteral",
-      "offset": 1247,
+      "offset": 1314,
       "length": 15,
       "value": "\"Network error\""
     },
     {
       "filePath": "\/Users\/cankurtur\/LEO\/LeoNetworking\/LeoNetworking\/Base\/Errors.swift",
       "kind": "StringLiteral",
-      "offset": 1372,
+      "offset": 1439,
       "length": 16,
       "value": "\"Decoding Error\""
     },
     {
       "filePath": "\/Users\/cankurtur\/LEO\/LeoNetworking\/LeoNetworking\/Base\/Errors.swift",
       "kind": "StringLiteral",
-      "offset": 1410,
+      "offset": 1477,
       "length": 18,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/cankurtur\/LEO\/LeoNetworking\/LeoNetworking\/Base\/Errors.swift",
       "kind": "StringLiteral",
-      "offset": 1427,
+      "offset": 1494,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/cankurtur\/LEO\/LeoNetworking\/LeoNetworking\/Base\/Errors.swift",
       "kind": "StringLiteral",
-      "offset": 1471,
+      "offset": 1538,
       "length": 9,
       "value": "\"Timeout\""
     },
     {
       "filePath": "\/Users\/cankurtur\/LEO\/LeoNetworking\/LeoNetworking\/Base\/Errors.swift",
       "kind": "StringLiteral",
-      "offset": 1533,
+      "offset": 1600,
       "length": 21,
       "value": "\"Invalid status code\""
     },
     {
       "filePath": "\/Users\/cankurtur\/LEO\/LeoNetworking\/LeoNetworking\/Base\/Errors.swift",
       "kind": "StringLiteral",
-      "offset": 1600,
+      "offset": 1667,
       "length": 13,
       "value": "\"Bad request\""
     },
     {
       "filePath": "\/Users\/cankurtur\/LEO\/LeoNetworking\/LeoNetworking\/Base\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 1768,
+      "offset": 1804,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/cankurtur\/LEO\/LeoNetworking\/LeoNetworking\/Base\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 1817,
+      "offset": 1853,
       "length": 3,
       "value": "400"
     },
     {
       "filePath": "\/Users\/cankurtur\/LEO\/LeoNetworking\/LeoNetworking\/Base\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 2007,
+      "offset": 2043,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/cankurtur\/LEO\/LeoNetworking\/LeoNetworking\/Base\/Errors.swift",
       "kind": "IntegerLiteral",
-      "offset": 2054,
+      "offset": 2090,
       "length": 1,
       "value": "0"
     }
