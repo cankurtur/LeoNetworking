@@ -12,9 +12,10 @@ public protocol APIError: Codable, AnyObject {
     var error: BaseError { get set }
 }
 
+/// Base error structure for conformed API.
 public class BaseError: Codable {
-    public var code: String
-    public var message: String
+    public var message: String?
+    public var code: String?
 }
 
 /// Concrete API error type.
@@ -29,7 +30,7 @@ public enum APIClientError: Error {
     public var message: String {
         switch self {
         case .handledError(let apiError):
-            return apiError.error.message
+            return apiError.error.message ?? ""
         case .decoding:
             return "Decoding Error"
         case .networkError:
@@ -46,7 +47,7 @@ public enum APIClientError: Error {
     public var debugMessage: String {
         switch self {
         case .handledError(let apiError):
-            return apiError.error.message
+            return apiError.error.message ?? ""
         case .networkError:
             return "Network error"
         case .decoding(let decodingError):
