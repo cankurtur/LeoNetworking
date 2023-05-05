@@ -160,8 +160,7 @@ private extension NetworkManager {
             }
             
             let clientError = try self.decoder.decode(self.clientErrorType, from: data)
-            clientError.statusCode = response.code
-            return APIClientError.handledError(error: clientError)
+            return APIClientError.handledError(apiError: clientError)
         } catch {
             let decodingError = APIClientError.decoding(error: error as? DecodingError)
             return decodingError

@@ -8,14 +8,17 @@ import Foundation
 
 /// Generic error type for error layer, provide your own type with confirming this protocol
 /// to be able to cast network error to your own error model.
-public protocol APIError: Codable, AnyObject {
-    var message: String { get }
-    var statusCode: Int? { get set }
+public protocol APIError: Codable {
+    var error: BaseError { get }
+}
+
+public protocol BaseError: Codable, AnyObject {
+    var message: String { get set }
 }
 
 /// Concrete API error type.
 public enum APIClientError: Error {
-    case handledError(error: APIError)
+    case handledError(apiError: APIError)
     case networkError
     case decoding(error: DecodingError?)
     case timeout
@@ -24,8 +27,8 @@ public enum APIClientError: Error {
     
     public var message: String {
         switch self {
-        case .handledError(let error):
-            return error.message
+        case .handledError(let apiError):
+            return apiError.error.message
         case .decoding:
             return "Decoding Error"
         case .networkError:
@@ -41,8 +44,8 @@ public enum APIClientError: Error {
 
     public var debugMessage: String {
         switch self {
-        case .handledError(let error):
-            return error.message
+        case .handledError(let apiError):
+            return apiError.error.message
         case .networkError:
             return "Network error"
         case .decoding(let decodingError):
@@ -59,8 +62,8 @@ public enum APIClientError: Error {
     
     public var statusCode: Int {
         switch self {
-        case .handledError(let error):
-            return error.statusCode ?? 0
+        case .handledError:
+            return 0
         case .networkError:
             return 400
         case .decoding:
